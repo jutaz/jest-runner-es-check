@@ -1,0 +1,25 @@
+{
+  "name": "jest-runner-es-check-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "jest-runner-es-check": "file:.."
+  },
+  "jest": {
+    "runner": "jest-runner-es-check",
+    "displayName": "es-check",
+    "testEnvironmentOptions": {
+      "ecmaVersion": "es5"
+    },
+    "testMatch": [
+      "<rootDir>/dist/**/*.js"
+    ]
+  }
+}
